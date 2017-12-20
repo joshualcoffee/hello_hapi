@@ -7,7 +7,7 @@ const Server = require('../../app.js');
 lab.experiment('Basic HTTP Tests', () => {
 
     lab.test('Greets /hello/homer} ', (done) => {
-
+        //test
         const options = {
             method: 'GET',
             url: '/hello/Homer'
