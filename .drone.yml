@@ -7,3 +7,7 @@ pipeline:
       - npm install
       - npm run test-junit
       - cp -a /root/node_modules /drone
+  cache:
+    mount:
+      - node_modules
+      - .git
