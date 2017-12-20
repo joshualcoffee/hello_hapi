@@ -4,6 +4,6 @@ pipeline:
     commands:
       - npm install
   test:
-    image: cypress/base:8
+    image: cypress/base:6
     commands:
       - npm run test-junit
