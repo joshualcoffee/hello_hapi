@@ -1,7 +1,8 @@
 pipeline:
   build:
-    image: node:latest
-    commands: npm install
+    image: cypress/base:6
   test:
     image: node:latest
-    commands: npm run test
+    commands:
+      - npm install
+      - npm run test-junit
