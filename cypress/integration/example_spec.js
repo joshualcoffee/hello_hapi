@@ -10,6 +10,7 @@
 
 // Please read our "Introduction to Cypress"
 // https://on.cypress.io/introduction-to-cypress
+// test
 describe('Kitchen Sink', function(){
   it('.should() - assert that <title> is correct', function(){
     // https://on.cypress.io/visit
