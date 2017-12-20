@@ -1,9 +1,9 @@
 pipeline:
-  cache:
-    mount:
-      - /drone/node_modules
   test:
     image: cypress/base:6
+    cache:
+      mount:
+        - /drone/node_modules
     commands:
       - cp -a /drone/node_modules /root
       - rm -rf /drone/node_modules
