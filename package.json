@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "NODE_ENV=test node node_modules/lab/bin/lab -v -L -C -D"
+    "test": "NODE_ENV=test node node_modules/lab/bin/lab -v -L -C -D",
+    "test-junit": "cypress run --reporter junit --reporter-options 'mochaFile=junit-results/my-test-output.xml'",
   },
   "author": "Brian Hogan",
   "license": "MIT",
