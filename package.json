@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "test": "NODE_ENV=test node node_modules/lab/bin/lab -v -L -C -D",
-    "test-junit": "cypress run --reporter junit",
+    "test-junit": "cypress run --reporter junit"
   },
   "author": "Brian Hogan",
   "license": "MIT",
