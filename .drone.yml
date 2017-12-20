@@ -4,6 +4,6 @@ pipeline:
     commands:
       - npm install
   test:
-    image: cypress/base:ubuntu16
+    image: cypress/browsers:chrome63
     commands:
       - npm run test-junit
