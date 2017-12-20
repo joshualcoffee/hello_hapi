@@ -1,8 +1,12 @@
 pipeline:
-  build:
-    image: cypress/base:6
+  cache:
+    mount:
+      - /drone/node_modules
   test:
-    image: node:latest
+    image: cypress/base:6
     commands:
+      - cp -a /drone/node_modules /root
+      - rm -rf /drone/node_modules
       - npm install
       - npm run test-junit
+      - cp -a /root/node_modules /drone
