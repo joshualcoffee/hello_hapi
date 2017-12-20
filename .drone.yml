@@ -1,5 +1,5 @@
 pipeline:
-  test:
+  build:
     cache:
       mount:
         - node_modules
